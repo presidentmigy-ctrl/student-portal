@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Portal - Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 600px;
+    }
+    .card {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .header-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logout-btn {
+      background-color: #dc3545;
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .logout-btn:hover {
+      background-color: #bd2130;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid #aca5a5;
+    }
+    th {
+      background-color: #bdbebe;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Header -->
+    <div class="card header-card">
+        <h2>Welcome, Student!</h2>
+        <p style="margin: 0; color: #666;">ID: 123456</p>
+    </div>
+
+    <!-- Courses -->
+    <div class="card" id="courses">
+      <h3>Courses</h3>
+      <table>
+        <tr>
+          <th>Course Code</th>
+          <th>Course Name</th>
+          <th>Instructor</th>
+        </tr>
+        <tr>
+          <td>Chemistry</td>
+          <td>Advanced Structural Chemistry</td>
+          <td>Dr. Abebe</td>
+        </tr>
+        <tr>
+          <td>Mathematics</td>
+          <td>Linear Algebra & Vectors</td>
+          <td>Prof. Kebede</td>
+        </tr>
+        <tr>
+          <td>Computer Science</td>
+          <td>Introduction to Python</td>
+          <td>Dr. Hailu</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Grades -->
+    <div class="card" id="grades">
+      <h3>Grades</h3>
+      <table>
+        <tr>
+          <th>Course Code</th>
+          <th>Grade</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>Chemistry</td>
+          <td>94% (A)</td>
+          <td>Passed</td>
+        </tr>
+        <tr>
+          <td>Mathematics</td>
+          <td>88% (B+)</td>
+          <td>In Progress</td>
+        </tr>
+        <tr>
+          <td>Computer Science</td>
+          <td>96% (A)</td>
+          <td>Passed</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+</body>
+</html>
